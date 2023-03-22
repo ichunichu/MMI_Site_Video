@@ -1,0 +1,46 @@
+
+
+body{
+ margin:0px;   
+}    
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1,nav{
+    width: 33.33%;
+}
+h1{
+    justify-self:start;
+    
+}
+
+nav {
+    justify-self: center;
+    display: flex;
+    gap: 1em;
+    height: 100%;
+    align-items: center;
+}
+nav a{
+    background-color: rgba(255,255,255,.1);
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+#accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+button{
+    padding: 1em;
+    padding-inline: 15em;
+
+}
