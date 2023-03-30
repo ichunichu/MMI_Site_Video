@@ -10,6 +10,19 @@ body{
  font-family: 'Inconsolata', monospace;
 }    
 
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    justify-self: start;
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*
+HEADER
+*/
+
 header{
     display: flex;
     align-items: center;
@@ -18,8 +31,11 @@ header{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-inline: 3rem;
 }
-header >  div{
+header >  button{
     visibility: hidden;
+    width: 64px;
+    background-color: unset;
+    border: none;
 }
 
 header > *{
@@ -37,16 +53,20 @@ ul li{
     list-style: none;
 }
 ul a{
-    background-color: rgba(255,255,255,.1);
+    text-align: center;
+    display: block;
     color: white;
     text-decoration: none;
     padding: 1em;
-}
+    width: 8rem;
 
-#trailer{
-    align-self: center;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    
+    transition: color,background-color .5s;
+}
+ul a:hover{
+    color:black;
+    background-color: white;
+
 }
 
 nav{
@@ -54,20 +74,22 @@ nav{
     display: flex;
     justify-content: center;
 }
-h1{
-    font-family: 'Josefin Sans', sans-serif;
-    justify-self: start;
+
+/*
+Accueil
+*/
+
+#accueil > iframe{
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 16 / 9 ;
 }
-h2{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-}
+
+
 .title{
     font-size: 2rem;
 }
 
-
- 
 #accueil{
     padding-top: 1.5rem;
     padding-inline: 20%;
@@ -83,42 +105,79 @@ h2{
     width: 100%;
     align-self: center;
     padding-block: 1em;
-    background-color: gainsboro;
+    color:black;
+    background-color: rgb(255, 255, 255);
     border: 2px black solid;
+    transition: color,background-color 1s;
 }
-@media (max-width: 1250px) { 
+
+.btn:hover{
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+
+
+
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1300px) { 
     #accueil{
         padding-inline: 10%;
     }
     header{
         padding-inline: 1rem;
     }
-    header > div{
+    header > button{
         display: none;
     }
     nav{
         justify-content: end;
     }
+    
 
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 1000px) { 
     #accueil{
         padding-inline: 1%;
     }
-    nav{
-        visibility: hidden;
-        width: 0px;
+    header{
+        justify-content: space-between;
+        position:relative
     }
-    header > div{
+    
+    header > *{
+        width: 8rem;
+    }
+    nav{
+        display: none;
+    }
+    nav.activated{
+        display: block;
+        
+        background-color: black;
+        position:absolute;
+        top:8.7rem;
+        left: 0;
+        width: 100vw;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    nav li a {
+        width: 100vw;
+    }
+    header > button{
         visibility: visible;
         display: flex;
         justify-content: end;
     }
-    header > div > svg{
+    header > button > svg{
         justify-self: flex-end;
-    }
-    header > *{
-        width: 8rem;
     }
  }
