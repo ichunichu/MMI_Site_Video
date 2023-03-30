@@ -3,6 +3,10 @@ body{
     padding:0;
     background-color: rgb(27, 27, 27);
 }
+/*
+HEADER
+*/
+
 header{
     display: flex;
     align-items: center;
@@ -11,8 +15,11 @@ header{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-inline: 3rem;
 }
-header >  div{
+header >  button{
     visibility: hidden;
+    width: 64px;
+    background-color: unset;
+    border: none;
 }
 
 header > *{
@@ -30,16 +37,28 @@ ul li{
     list-style: none;
 }
 ul a{
-    background-color: rgba(255,255,255,.1);
+    text-align: center;
+    display: block;
     color: white;
     text-decoration: none;
     padding: 1em;
+    width: 8rem;
+
+    
+    transition: color,background-color .5s;
 }
+ul a:hover{
+    color:black;
+    background-color: white;
+
+}
+
 nav{
     flex:1;
     display: flex;
     justify-content: center;
 }
+
 #titre{
     display:flex;
     justify-content: center;
@@ -86,3 +105,61 @@ a{
     color: white; 
     display:block;
 }
+/*Media Queries*/
+
+@media (max-width: 1300px) { 
+    #accueil{
+        padding-inline: 10%;
+    }
+    header{
+        padding-inline: 1rem;
+    }
+    header > button{
+        display: none;
+    }
+    nav{
+        justify-content: end;
+    }
+    
+
+}
+
+@media (max-width: 1000px) { 
+    #accueil{
+        padding-inline: 1%;
+    }
+    header{
+        justify-content: space-between;
+        position:relative
+    }
+    
+    header > *{
+        width: 8rem;
+    }
+    nav{
+        display: none;
+    }
+    nav.activated{
+        display: block;
+        
+        background-color: black;
+        position:absolute;
+        top:8.7rem;
+        left: 0;
+        width: 100vw;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    nav li a {
+        width: 100vw;
+    }
+    header > button{
+        visibility: visible;
+        display: flex;
+        justify-content: end;
+    }
+    header > button > svg{
+        justify-self: flex-end;
+    }
+ }
