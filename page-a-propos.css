@@ -1,0 +1,341 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-inline: 3rem;
+}
+header >  button{
+    visibility: hidden;
+    width: 64px;
+    background-color: unset;
+    border: none;
+}
+
+header > *{
+    width:20rem;
+}
+
+ul {
+    justify-self: center;
+    display: flex;
+    gap: 1em;
+    height: 100%;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+ul a{
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    width: 8rem;
+
+   
+    transition: color,background-color .5s;
+}
+ul a:hover{
+    color:black;
+    background-color: white;
+
+}
+
+nav{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Josefin+Sans:wght@200;300;400;500&display=swap');
+
+h2{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#coll {
+    width: 45%;
+    height: 470px;
+    border: 2px solid  rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231);
+    box-shadow: 10px 10px rgb(202, 202, 202);
+}
+
+img{
+    margin-left: 25%;
+    width: 400px;
+    left: 400px;
+}
+
+#proj {
+    width: 45%;
+    height: 470px;
+    border: 2px solid  rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231);
+    box-shadow: 10px 10px rgb(202, 202, 202);
+
+}
+
+h3{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color:white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-inline: 3rem;
+    }
+    header >  button{
+        visibility: hidden;
+        width: 64px;
+        background-color: unset;
+        border: none;
+    }
+    
+    header > *{
+        width:20rem;
+    }
+    
+    ul {
+        justify-self: center;
+        display: flex;
+        gap: 1em;
+        height: 100%;
+        align-items: center;
+    }
+    ul li{
+        list-style: none;
+    }
+    ul a{
+        text-align: center;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        width: 8rem;
+    
+       
+        transition: color,background-color .5s;
+    }
+    ul a:hover{
+        color:black;
+        background-color: white;
+    
+    }
+    
+    nav{
+        flex:1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Josefin+Sans:wght@200;300;400;500&display=swap');
+    
+    h2{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    section {
+        display: flex;
+        justify-content: space-around;
+
+        flex-direction: column;
+    }
+    
+    #coll {
+        width: 95%;
+        height: 470px;
+        border: 2px solid  rgb(231, 231, 231);
+        background-color: rgb(231, 231, 231);
+        box-shadow: 10px 10px rgb(202, 202, 202);
+        margin-bottom: 10%;
+    }
+    
+    img{
+        margin-left: 15%;
+        width: 400px;
+        left: 400px;
+    }
+    
+    #proj {
+        width: 95%;
+        height: 470px;
+        border: 2px solid  rgb(231, 231, 231);
+        background-color: rgb(231, 231, 231);
+        box-shadow: 10px 10px rgb(202, 202, 202);
+    
+    }
+    
+    h3{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    
+    }
+    
+    p{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px){
+    header{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color:white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-inline: 3rem;
+    }
+    header >  button{
+        visibility: hidden;
+        width: 64px;
+        background-color: unset;
+        border: none;
+    }
+    
+    header > *{
+        width:20rem;
+    }
+    
+    ul {
+        justify-self: center;
+        display: flex;
+        gap: 1em;
+        height: 100%;
+        align-items: center;
+    }
+    ul li{
+        list-style: none;
+    }
+    ul a{
+        text-align: center;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        width: 8rem;
+    
+       
+        transition: color,background-color .5s;
+    }
+    ul a:hover{
+        color:black;
+        background-color: white;
+    
+    }
+    
+    nav{
+        flex:1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Josefin+Sans:wght@200;300;400;500&display=swap');
+    
+    h2{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #coll {
+        width: 45%;
+        height: 470px;
+        border: 2px solid  rgb(231, 231, 231);
+        background-color: rgb(231, 231, 231);
+        box-shadow: 10px 10px rgb(202, 202, 202);
+    }
+    
+    img{
+        margin-left: 25%;
+        width: 400px;
+        left: 400px;
+    }
+    
+    #proj {
+        width: 45%;
+        height: 470px;
+        border: 2px solid  rgb(231, 231, 231);
+        background-color: rgb(231, 231, 231);
+        box-shadow: 10px 10px rgb(202, 202, 202);
+    
+    }
+    
+    h3{
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    
+    }
+    
+    p{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+
+
+}
