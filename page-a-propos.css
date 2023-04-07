@@ -298,26 +298,28 @@ p{
     
     section {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
+
+        flex-direction: column;
     }
     
     #coll {
-        width: 45%;
-        height: 470px;
+        width: 95%;
+        height: 520px;
         border: 2px solid  rgb(231, 231, 231);
         background-color: rgb(231, 231, 231);
         box-shadow: 10px 10px rgb(202, 202, 202);
+        margin-bottom: 15%;
     }
     
     img{
-        margin-left: 25%;
+        margin-left: 0%;
         width: 400px;
         left: 400px;
     }
     
     #proj {
-        width: 45%;
+        width: 95%;
         height: 470px;
         border: 2px solid  rgb(231, 231, 231);
         background-color: rgb(231, 231, 231);
@@ -336,6 +338,4 @@ p{
         font-family: 'Josefin Sans', sans-serif;
     }
     
-
-
 }
