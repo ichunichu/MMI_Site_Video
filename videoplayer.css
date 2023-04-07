@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Josefin+Sans:wght@200;300;400;500&display=swap');
+
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Josefin Sans', sans-serif;
+*/
 body{
     margin:0;
     padding:0;
     background-color: rgb(27, 27, 27);
+    font-family: 'Inconsolata', monospace;
 }
 /*
 HEADER
@@ -25,7 +32,9 @@ header >  button{
 header > *{
     width:20rem;
 }
-
+h1, h2, h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
 ul {
     justify-self: center;
     display: flex;
@@ -63,16 +72,19 @@ nav{
     display:flex;
     justify-content: center;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 #center_page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 1080px;
-    height: 100vh;
+    /*height: 100vh;
+    
+    margin-top: 18vh;*/
     margin-left:25vw;
     margin-right: 25vw;
-    margin-top: 18vh;
 }
 #player_num{
     width: 1080px;
@@ -90,16 +102,23 @@ nav{
     color:white;
 }
 
-.bouton{
-    background-color: rgb(49, 9, 122);
-    box-shadow: 3px 5px rgba(49, 9, 122, 0.4);
+.bouton {
+    padding: 15px 100px;
+    margin: 10px 4px;
+    cursor: pointer;
     color: white;
-    padding: 15px;
-    border: black solid 1px;
-    border-radius: 60px;
-    width: 170px;
-    height: 70px;
-}
+    /*background: linear-gradient(to top,rgba(255, 145, 1, 0.568), rgb(255, 181, 70));*/
+    background: linear-gradient(to top,rgba(120, 1, 255, 0.568), rgb(145, 46, 238));
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    border:black 2px solid;
+  }
+  .bouton:hover {
+    opacity: 0.5;
+  }
+  
 a{
     text-decoration: none;
     color: white; 
