@@ -12,7 +12,11 @@ body{
  margin:0px;   
  font-family: 'Inconsolata', monospace;
  min-height: 100vh;
+<<<<<<< HEAD:css/accueilstyle.css
  background-color: var;
+=======
+ /*background-color: rgb(27, 27, 27);*/
+>>>>>>> d7d4904274c7f0a0e52036e80d6bcea794b39963:accueilstyle.css
 }
 
 h1{
