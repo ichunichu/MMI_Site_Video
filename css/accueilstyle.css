@@ -4,12 +4,19 @@
 font-family: 'Inconsolata', monospace;
 font-family: 'Josefin Sans', sans-serif;
 */
+:root{
+    --primary: rgba(120,1, 255, 0.568);
+}
 
 body{
  margin:0px;   
  font-family: 'Inconsolata', monospace;
  min-height: 100vh;
- background-color: rgb(27, 27, 27);
+<<<<<<< HEAD:css/accueilstyle.css
+ background-color: var;
+=======
+ /*background-color: rgb(27, 27, 27);*/
+>>>>>>> d7d4904274c7f0a0e52036e80d6bcea794b39963:accueilstyle.css
 }
 
 h1{
@@ -18,7 +25,8 @@ h1{
 }
 h2{
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 3em;
 }
 
 /*
@@ -29,7 +37,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: var(--primary);
     color:white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-inline: 3rem;
@@ -45,14 +53,14 @@ header > *{
     width:20rem;
 }
 
-ul {
+nav > ul {
     justify-self: center;
     display: flex;
     gap: 1em;
     height: 100%;
     align-items: center;
 }
-ul li{
+nav > ul li{
     list-style: none;
 }
 ul a{
@@ -64,7 +72,7 @@ ul a{
     width: 8rem;
     transition: color,background-color .5s;
 }
-ul a:hover{
+nav > ul a:hover{
     color:black;
     background-color: white;
 
@@ -122,14 +130,14 @@ Accueil
     width: 100%;
     align-self: center;
     padding-block: 1em;
-    color:black;
+    color:var(--primary);
     background-color: rgb(255, 255, 255);
-    border: 2px black solid;
+    border: 2px var(--primary) solid;
     transition: color,background-color 1s;
 }
 
 .btn:hover{
-    background-color: black;
+    background-color: var(--primary);
     border-color: white;
     color: white;
 }
@@ -138,6 +146,13 @@ Accueil
 }
 
 
+/*FOOTER*/
+footer{
+    background-color: var(--primary);
+    display: grid;
+    color: aliceblue;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
 
