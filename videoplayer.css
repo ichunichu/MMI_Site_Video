@@ -94,7 +94,7 @@ nav{
     justify-content: space-around;
     margin-top: 60px;
 }
-#synopsis{
+#infos{
     margin-top: 80px;
     color:white;
 }
@@ -120,6 +120,17 @@ a{
     text-decoration: none;
     color: white; 
     display:block;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table,td{
+    border: 3px   rgba(120, 1, 255, 0.568) solid;
+    border-collapse: collapse;
+}
+#synopsis{
+    padding: 20px;
 }
 /*Media Queries*/
 
