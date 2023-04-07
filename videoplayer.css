@@ -16,6 +16,7 @@ HEADER
 
 header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: black;
     color:white;
@@ -23,7 +24,7 @@ header{
     padding-inline: 3rem;
 }
 header >  button{
-    visibility: hidden;
+    display: none;
     width: 64px;
     background-color: unset;
     border: none;
@@ -32,9 +33,7 @@ header >  button{
 header > *{
     width:20rem;
 }
-h1, h2, h3{
-    font-family: 'Josefin Sans', sans-serif;
-}
+
 ul {
     justify-self: center;
     display: flex;
@@ -52,8 +51,6 @@ ul a{
     text-decoration: none;
     padding: 1em;
     width: 8rem;
-
-    
     transition: color,background-color .5s;
 }
 ul a:hover{
@@ -65,9 +62,9 @@ ul a:hover{
 nav{
     flex:1;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
-
+/*FIN HEADER*/
 #titre{
     display:flex;
     justify-content: center;
