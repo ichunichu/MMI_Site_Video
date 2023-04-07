@@ -1,0 +1,44 @@
+les propriété:
+ indexOf:donne la position de l'element dans le tableau 
+ lenght:donne le nombre de valeurs dan le tableau
+
+ let lang= ["html","css","js"]
+
+ console.log(lang)
+ console.log(lang.length)
+ console.log(lang.indexOf("css"))
+  i=0 ;
+ while(i< lang.length){ 
+    console.log(lang[i])
+ i++;
+ }
+
+Declaration d'une fonction :
+ function hello(){
+ } 
+ oU
+ Let hello= function(valeurs){
+    return bonjour+valeurs
+ }
+
+Appel une fonction:
+ 
+ hello()
+   
+ function hello(){
+    return'bonjour '+ firstname
+ }
+
+function conversion(c
+    let f= 1.8*c+32
+    return f   
+ 
+ let t=prompt("quelle tepérature
+ let result = conversion(
+ console.log(result)
+
+triage dans un tableau:
+ variable.filter  
+
+
+
