@@ -12,7 +12,7 @@ body{
  margin:0px;   
  font-family: 'Inconsolata', monospace;
  min-height: 100vh;
- background-color: black;
+ background-color: rgb(0, 0, 0);
 }
 
 h1{
@@ -201,16 +201,28 @@ p{
 /*
 Contact
 */
+#contactMain{
+    display: flex;
+    margin-block: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#autres-contact{
+    flex-direction: column;
+    justify-content: space-between;
+    gap:5em
+}
 
   
 .contact {
     flex-direction: column;
     max-width: 470px;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
+    margin: 50px;
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
   }
   
   .contact h1 {
@@ -266,7 +278,29 @@ input[type="submit"] {
     input[type="submit"]:hover {
     background-color: #555;
     }
+
+    .info-sup{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+   
+    #tel {
+        width: 100px;
+    }
+    #mail {
+        width: 100px;
+    }
+
+    #map {
+        width: 100px;
+    }
     
+    p{
+        color: #fff;
+        margin: 20px;
+    }
 /*
 VIDEO PLAYER*/
 
@@ -354,6 +388,8 @@ table,td{
     nav{
         justify-content: end;
     }
+
+    /*Page contact*/
     
 
 }
