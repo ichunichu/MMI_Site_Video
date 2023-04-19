@@ -453,13 +453,23 @@ table{
       
     margin-bottom:50px;
 }
-td{ 
-    border-radius: 20px;
-    border: 2px   rgba(120, 1, 255, 0.568) solid;
+#date,#infos{ 
+    
+    
     border-collapse:collapse;
+    border-radius: 20px;
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(5px) ;
    
+}
+#date{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#infos{
+    margin-bottom: 50px;
 }
 #synopsis{
     padding: 20px;
