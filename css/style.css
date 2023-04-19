@@ -5,14 +5,17 @@ font-family: 'Inconsolata', monospace;
 font-family: 'Josefin Sans', sans-serif;
 */
 :root{
-    --primary: rgba(120,1, 255, 0.568);
+    --background : #111A6F;
+    --primary: #3A0CA3;
+    --secondary : #7A3BDF;
 }
 
 body{
+ color:white;
  margin:0px;   
  font-family: 'Inconsolata', monospace;
  min-height: 100vh;
- background-color: black;
+ background-color: var(--background);
 }
 
 h1{
@@ -34,10 +37,10 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
-    color:white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-inline: 3rem;
 }
+
 header >  button{
     display: none;
     width: 64px;
@@ -158,33 +161,26 @@ footer{
 /*
 A propos
 */
-section {
+#apropos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 2em;
 }
 
-#coll {
-    width: 45%;
-    height: 470px;
-    border: 2px solid  rgb(231, 231, 231);
-    background-color: rgb(231, 231, 231);
-    box-shadow: 10px 10px rgb(202, 202, 202);
-}
+
 
 img{
     margin-left: 25%;
     width: 400px;
     left: 400px;
 }
-
-#proj {
+#apropos div{
     width: 45%;
     height: 470px;
-    border: 2px solid  rgb(231, 231, 231);
-    background-color: rgb(231, 231, 231);
-    box-shadow: 10px 10px rgb(202, 202, 202);
-
+    /*border: 2px solid  rgb(231, 231, 231);*/
+    background-color: var(--secondary);
+    box-shadow: 10px 10px var(--primary);
 }
 
 h3{
