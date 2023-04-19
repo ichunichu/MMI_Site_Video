@@ -5,10 +5,12 @@ font-family: 'Inconsolata', monospace;
 font-family: 'Josefin Sans', sans-serif;
 */
 :root{
+    --content: white;
     --background : #111A6F;
     --primary: #3A0CA3;
     --secondary : #7A3BDF;
 }
+
 
 body{
  color:white;
@@ -152,7 +154,7 @@ Accueil
 /*FOOTER*/
 footer{
     background-color: var(--primary);
-    display: grid;
+    display: flex;
     color: aliceblue;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -277,12 +279,9 @@ VIDEO PLAYER*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1080px;
-    /*height: 100vh;
+    align-items: center;
     
-    margin-top: 18vh;*/
-    margin-left:25vw;
-    margin-right: 25vw;
+
 }
 #player_num{
     width: 1080px;
