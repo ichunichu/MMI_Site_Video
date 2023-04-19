@@ -432,6 +432,7 @@ VIDEO PLAYER*/
     border-radius: 15px;
     border:rgba(120, 1, 255, 0.568) 2px solid;
     box-shadow: 2px 2px 4px rgba(0,0,0,.8);
+    font-family: 'Josefin Sans';
     
 }
   #txtsuivant{
