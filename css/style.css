@@ -394,6 +394,11 @@ VIDEO PLAYER*/
     font-family: 'Josefin Sans', sans-serif;
 
 }
+#player iframe{
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 16 / 9 ;
+}
 #center_page{
     display: flex;
     flex-direction: column;
@@ -403,12 +408,7 @@ VIDEO PLAYER*/
     
 
 }
-#player_num{
-    width: 1080px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    }
+
 #bouton_flex{
     width: 100%;
     display: flex;
@@ -419,6 +419,7 @@ VIDEO PLAYER*/
 #playerbouton{
     display: flex;
     flex-direction: column;
+    width: 80vw;
 }
 #infos{
     margin-top: 80px;
@@ -427,8 +428,7 @@ VIDEO PLAYER*/
 }
 
 .bouton {
-    padding: 15px 100px;
-    margin: 10px 4px;
+    padding:1em;
     cursor: pointer;
     color: white;
     /*background: linear-gradient(to top,rgba(255, 145, 1, 0.568), rgb(255, 181, 70));*/
@@ -439,6 +439,10 @@ VIDEO PLAYER*/
     border-radius: 15px;
     border:rgba(120, 1, 255, 0.568) 2px solid;
     box-shadow: 2px 2px 4px rgba(0,0,0,.8);
+    
+}
+  #txtsuivant{
+    margin:0px 10px;
   }
   .bouton:hover {
     opacity: 0.5;
@@ -452,14 +456,27 @@ a{
 table{
     width: 100%;
     text-align: center;
-    background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px) ;
     border-radius: 20px;
+      
     margin-bottom:50px;
 }
-table,td{
-    border: 3px   rgba(120, 1, 255, 0.568) solid;
-    border-collapse: collapse;
+#date,#infos{ 
+    
+    
+    border-collapse:collapse;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px) ;
+   
+}
+#date{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#infos{
+    margin-bottom: 50px;
 }
 #synopsis{
     padding: 20px;
@@ -520,7 +537,7 @@ table,td{
     }
     header{
         justify-content: space-between;
-        position:relative
+        position:relative;
     }
     
     header > *{
@@ -552,6 +569,15 @@ table,td{
     header > button > svg{
         justify-self: flex-end;
     }
+    #player, #player iframe{
+        width: auto;
+        height: 50vh;
+        align-self: center;
+    }
+    .bouton{
+        margin: 0px 7px;
+    }
+
 
     /*
     Page a propos*/
@@ -581,4 +607,4 @@ table,td{
     }
     
 
- }
+}

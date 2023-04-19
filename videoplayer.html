@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidéo Player</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js" defer></script>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Collège Jean Monet</h1>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/video.html">Videos</a></li>
+                <li><a href="/apropos.html">A propos</a></li>
+                <li><a href="/contact.html">Contacts</a></li>
             </ul>
         </nav>
         <button onclick="showMobileMenu()" >
@@ -28,42 +28,53 @@
         <div id="playerbouton">
             <div id="titrenum">
                 <h1>Titre vidéo</h1>
-                 <p>Episode X</p>
+                 <p>Episode 1</p>
             </div>
 
                 <div id="player">
                     <iframe width="1080" height="720" src="https://www.youtube.com/embed/BpzBv2B1SjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-
+           <div id="date">
+                   <p>Date de sortie</p>
+                   <p>25:06</p>
+                   <p>20-04-2023</p>
+           </div>
             <div id="bouton_flex">            
                     <a href=""><button class="bouton" id="precedent">Episode Précédent</button></a>            
-                    <a href=""><button class="bouton" id="suivant">Episode Suivant</button></a>            
+                    <a href=""><button class="bouton" id="suivant"><span id="txtsuivant">Episode Suivant</span></button></a>            
             </div>
         </div>
         
 
         <div id="infos">
-           <table>
-               <tr>
-                   <td>Nom de l'épisode</td>
-                   <td>Le commencement</td>
-               </tr>
-               <tr>
-                   <td>Numéro épisode</td>
-                   <td>1</td>
-               </tr>
-               <tr>
-                   <td>Date de sortie</td>
-                   <td>20-04-2023</td>
-               </tr>
-               <tr>
-                   <td>synopsis</td>
-                   <td id="synopsis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quibusdam repellat dicta a error nihil fugit autem exercitationem, ducimus cumque commodi nulla veniam, odit repellendus, doloremque ipsa incidunt. Impedit, quibusdam? Cumque ratione quo consequatur ullam unde, tempore sequi soluta. Placeat ut fugit doloremque, nostrum molestiae modi. Atque fugiat velit doloremque ipsa consequatur quo laboriosam aut ad modi maxime repellat asperiores quis aspernatur voluptatibus architecto sed sunt necessitatibus quae cum cupiditate in sint vero, eum odit. Autem modi natus cum alias tempora, nam reiciendis laudantium repellat dolores magni iusto eum ullam, eos vero rerum molestias? Asperiores error eius dicta ut officiis possimus itaque omnis ipsa consequatur corrupti quod aliquam aliquid voluptatem sint reiciendis, animi maxime illo. Perferendis quo dolorem veritatis sit ducimus illo at atque dolor accusamus similique sapiente quia cum earum quaerat iusto aliquid unde distinctio quidem, odit fugit dignissimos facere quod? Atque ea corporis in eveniet, nam odit eius.</td>
-                </tr>
-           </table>
+
+                   <h3>synopsis</h3>
+                   <p id="synopsis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quibusdam repellat dicta a error nihil fugit autem exercitationem, ducimus cumque commodi nulla veniam, odit repellendus, doloremque ipsa incidunt. Impedit, quibusdam? Cumque ratione quo consequatur ullam unde, tempore sequi soluta. Placeat ut fugit doloremque, nostrum molestiae modi. Atque fugiat velit doloremque ipsa consequatur quo laboriosam aut ad modi maxime repellat asperiores quis aspernatur voluptatibus architecto sed sunt necessitatibus quae cum cupiditate in sint vero, eum odit. Autem modi natus cum alias tempora, nam reiciendis laudantium repellat dolores magni iusto eum ullam, eos vero rerum molestias? Asperiores error eius dicta ut officiis possimus itaque omnis ipsa consequatur corrupti quod aliquam aliquid voluptatem sint reiciendis, animi maxime illo. Perferendis quo dolorem veritatis sit ducimus illo at atque dolor accusamus similique sapiente quia cum earum quaerat iusto aliquid unde distinctio quidem, odit fugit dignissimos facere quod? Atque ea corporis in eveniet, nam odit eius.</p>
+
         </div>
 
     </main>
+    <footer>
+        <div >
+            <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        <div class="news">
+            <form action="#" method="post">
+                <label for="newsletter">newsletter</label>
+                <input type="text">
+                <button type="submit">></button>
+            </form>
+        </div>
+    </footer>
 
     
 
