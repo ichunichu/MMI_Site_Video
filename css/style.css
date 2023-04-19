@@ -156,6 +156,61 @@ Accueil
 }
 
 
+
+
+
+
+
+
+/*Liste video*/
+
+.videos{
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px ;   
+}
+.desc:hover {
+ background-color: #7a3bdf65;
+ animation-name: text;
+ animation-duration: 1s;
+
+}
+
+iframe{
+    border-radius: 5%;
+}
+iframe:hover{
+    border-radius: 5%;
+    box-shadow: #111A6F 5px 2px;
+}
+
+@keyframes text {
+    from {font-size:15px ;}
+    to {font-size: initial;};
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER*/
 footer{
     background-color: var(--primary);
