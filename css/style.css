@@ -20,6 +20,7 @@ body{
  background-color: var(--background);
 }
 
+
 h1{
     font-family: 'Josefin Sans', sans-serif;
     justify-self: start;
@@ -37,6 +38,7 @@ HEADER
 header{
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 5px 10px var(--primary);
     align-items: center;
     background-color: var(--primary);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,21 +101,15 @@ Accueil
     aspect-ratio: 16 / 9 ;
 }
 
-
-.title{
-    font-size: 2rem;
-}
-
 #accueil{
     position: relative;
     padding-block: 1.5rem;
-    padding-inline: 20%;
+    padding-inline: 5em;
     padding-bottom:2rem;
     height: 100%;
     display: flex;
 
     z-index: 5;
-    flex-direction: column;
     justify-content: space-evenly;
     gap:1rem;
     text-align: center;
@@ -129,6 +125,14 @@ Accueil
     filter: blur(4px) opacity(70%);
     background-image: url("https://www.studyrama.com/sites/default/files/metier/2022-07/arton791.png");
     content: "";
+}
+#accueil > * {
+    flex:1
+}
+#accueil > div{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn{
@@ -155,8 +159,13 @@ Accueil
 footer{
     background-color: var(--primary);
     display: flex;
+    justify-content: space-evenly;
     color: aliceblue;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer > form{
+    align-self: center;    
 }
 
 
@@ -182,7 +191,7 @@ img{
     height: 470px;
     /*border: 2px solid  rgb(231, 231, 231);*/
     background-color: var(--secondary);
-    box-shadow: 10px 10px var(--primary);
+    box-shadow: 10px 4px var(--primary);
 }
 
 h3{
