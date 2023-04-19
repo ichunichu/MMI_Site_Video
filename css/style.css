@@ -17,6 +17,7 @@ body{
  margin:0px;   
  font-family: 'Inconsolata', monospace;
  min-height: 100vh;
+
  background-color: var(--background);
 }
 
@@ -208,16 +209,28 @@ p{
 /*
 Contact
 */
+#contactMain{
+    display: flex;
+    margin-block: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#autres-contact{
+    flex-direction: column;
+    justify-content: space-between;
+    gap:5em
+}
 
   
 .contact {
     flex-direction: column;
     max-width: 470px;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
+    margin: 50px;
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
   }
   
   .contact h1 {
@@ -273,10 +286,36 @@ input[type="submit"] {
     input[type="submit"]:hover {
     background-color: #555;
     }
+
+    .info-sup{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+   
+    #tel {
+        width: 100px;
+    }
+    #mail {
+        width: 100px;
+    }
+
+    #map {
+        width: 100px;
+    }
     
+    p{
+        color: #fff;
+        margin: 20px;
+    }
 /*
 VIDEO PLAYER*/
-
+#titrenum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #titre{
     display:flex;
     justify-content: center;
@@ -289,6 +328,7 @@ VIDEO PLAYER*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 10vw;
     
 
 }
@@ -299,13 +339,20 @@ VIDEO PLAYER*/
     align-items: flex-end;
     }
 #bouton_flex{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     margin-top: 60px;
+    justify-content: space-between;
+}
+
+#playerbouton{
+    display: flex;
+    flex-direction: column;
 }
 #infos{
     margin-top: 80px;
     color:white;
+    justify-content: space-around;
 }
 
 .bouton {
@@ -319,7 +366,8 @@ VIDEO PLAYER*/
     text-align: center;
     position: relative;
     border-radius: 15px;
-    border:black 2px solid;
+    border:rgba(120, 1, 255, 0.568) 2px solid;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.8);
   }
   .bouton:hover {
     opacity: 0.5;
@@ -333,6 +381,10 @@ a{
 table{
     width: 100%;
     text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px) ;
+    border-radius: 20px;
+    margin-bottom:50px;
 }
 table,td{
     border: 3px   rgba(120, 1, 255, 0.568) solid;
@@ -358,6 +410,8 @@ table,td{
     nav{
         justify-content: end;
     }
+
+    /*Page contact*/
     
 
 }
