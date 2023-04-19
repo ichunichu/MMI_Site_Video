@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
         <a href="/"><h1>Collège Jean Monnet</h1></a>
         <nav>
@@ -23,15 +21,38 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="white"  viewBox="0 0 30 30" width="60px" height="60px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
         </button>
     </header>
-    <main>
-        <section id="accueil">
 
-            <!---Vous ecrivez vos codes ici-->
-            <h2 class="title">Jean n'est pas Monnet</h2>
-            <iframe src="https://www.youtube-nocookie.com/embed/ZT6IYZor9e8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <a href="#" class="btn">Voir la série</a>
-        </section>
+    <main>
+      <section class="contact">
+        <h1>Contactez-nous</h1>
+        <form action="#" method="POST">
+          <div class="information">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom.." required />
+          </div>
+
+          <div class="information">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre e-mail.." required />
+          </div>
+
+          <div class="information">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Ecrivez votre message.." required></textarea>
+          </div>
+
+          <div class="information">
+            <input type="submit" value="Envoyer" class="btn"/>
+          </div>
+        </form>
+      </section>
+
+      <section class="autres-contact">
+
+        
+      </section>
     </main>
+
     <footer>
         <div>
             <ul>
@@ -53,5 +74,5 @@
             </form>
         </div>
     </footer>
-</body>
+  </body>
 </html>

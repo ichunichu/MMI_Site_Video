@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="page-a-propos.css">
-    <link rel="stylesheet" href="accueilstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
     <title>Page à propos</title>
     
 </head>
 <body>
     <header>
-        <h1>Collège Jean Monet</h1>
+        <a href="/"><h1>Collège Jean Monnet</h1></a>
         <nav>
             <ul>
                 <li><a href="/">Accueil</a></li>
-                <li><a href="/">Videos</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="/video.html">Videos</a></li>
+                <li><a href="/apropos.html">A propos</a></li>
+                <li><a href="/contact.html">Contacts</a></li>
             </ul>
         </nav>
         <button onclick="showMobileMenu()" >
@@ -59,11 +58,26 @@
 
 </main>
 
-    <footer>
-
-
-
-
-    </footer>
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+    </div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    <div>
+        <form action="#" method="post">
+            <label for="newsletter">newsletter</label>
+            <input type="text">
+            <button type="submit">></button>
+        </form>
+    </div>
+</footer>
 </body>
 </html>
