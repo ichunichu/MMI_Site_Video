@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+        <a href="/"><h1>Collège Jean Monnet</h1></a>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/video.html">Videos</a></li>
+                <li><a href="/apropos.html">A propos</a></li>
+                <li><a href="/contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <button onclick="showMobileMenu()" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white"  viewBox="0 0 30 30" width="60px" height="60px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
+        </button>
+    </header>
+
+    <main id="contactMain">
+      <section class="contact">
+        <h1>Contactez-nous</h1>
+        <form action="#" method="POST">
+          <div class="information">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom.." required />
+          </div>
+
+          
+            <div class="information">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Entrez votre e-mail.." required />
+            </div>
+
+
+          <div class="information">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Ecrivez votre message.." required></textarea>
+          </div>
+
+          <div class="information">
+            <input type="submit" value="Envoyer" class="btn"/>
+          </div>
+        </form>
+      </section>
+
+      <section id="autres-contact">
+
+        <a href="tel:+563625180">
+        <div class="info-sup">
+          <img id="tel" src="img/telephoner.png" alt="tiliphone">
+          <p>+33 5 63 62 51 80</p>
+
+        </div>
+      </a>
+
+        <a href="mailto:0810061b@ac-toulouse.fr">
+        <div class="info-sup">
+          <img id="mail" src ="img/e-mail.png" alt="mail">
+          <p>0810061b@ac-toulouse.fr</p>
+          
+        </div>
+        </a>
+        <a href="https://www.google.com/maps/place/Coll%C3%A8ge+Jean+Monnet/@43.60755,2.2559363,15z/data=!4m6!3m5!1s0x12ae11d0553fb591:0x19000c9414c1c9bf!8m2!3d43.60755!4d2.2559363!16s%2Fg%2F1vp5_1w1" target="_blank" >
+        <div class="info-sup">
+          <img id="map" src ="img\navigation.png" alt="map">
+          <p>24 Av. du Sidobre, 81100 Castres</p>
+        </div>
+      </a>
+
+
+        
+      </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        <div>
+            <form action="#" method="post">
+                <label for="newsletter">newsletter</label>
+                <input type="text">
+                <button type="submit">></button>
+            </form>
+        </div>
+    </footer>
+  </body>
+</html>
