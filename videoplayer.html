@@ -23,22 +23,24 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="white"  viewBox="0 0 30 30" width="60px" height="60px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
         </button>
     </header>
-    <div id="center_page"> 
-        <div id="titre">
-            <h1>Titre vidéo</h1> 
-        </div>
-        <div id="player_num">
-            <div id="num_episode">
-                <p>Episode X</p>
+
+    <main id="center_page"> 
+        <div id="playerbouton">
+            <div id="titrenum">
+                <h1>Titre vidéo</h1>
+                 <p>Episode X</p>
             </div>
-            <div id="player">
-                <iframe width="1080" height="720" src="https://www.youtube.com/embed/BpzBv2B1SjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <div id="player">
+                    <iframe width="1080" height="720" src="https://www.youtube.com/embed/BpzBv2B1SjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            <div id="bouton_flex">            
+                    <a href=""><button class="bouton" id="precedent">Episode Précédent</button></a>            
+                    <a href=""><button class="bouton" id="suivant">Episode Suivant</button></a>            
             </div>
         </div>
-        <div id="bouton_flex">            
-                <a href=""><button class="bouton" id="precedent">Episode Précédent</button></a>            
-                <a href=""><button class="bouton" id="suivant">Episode Suivant</button></a>            
-        </div>
+        
 
         <div id="infos">
            <table>
@@ -61,7 +63,7 @@
            </table>
         </div>
 
-    </div>
+    </main>
 
     
 
