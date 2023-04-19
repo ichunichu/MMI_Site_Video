@@ -201,15 +201,17 @@ p{
 Contact
 */
 #contactMain{
+    color: black;
     display: flex;
     margin-block: 50px;
     align-items: center;
     justify-content: center;
 }
 #autres-contact{
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:5em
+    gap:5em;
 }
 
   
