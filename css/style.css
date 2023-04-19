@@ -267,7 +267,11 @@ input[type="submit"] {
     
 /*
 VIDEO PLAYER*/
-
+#titrenum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #titre{
     display:flex;
     justify-content: center;
@@ -280,6 +284,7 @@ VIDEO PLAYER*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 10vw;
     
 
 }
@@ -290,13 +295,20 @@ VIDEO PLAYER*/
     align-items: flex-end;
     }
 #bouton_flex{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     margin-top: 60px;
+    justify-content: space-between;
+}
+
+#playerbouton{
+    display: flex;
+    flex-direction: column;
 }
 #infos{
     margin-top: 80px;
     color:white;
+    justify-content: space-around;
 }
 
 .bouton {
@@ -310,7 +322,8 @@ VIDEO PLAYER*/
     text-align: center;
     position: relative;
     border-radius: 15px;
-    border:black 2px solid;
+    border:rgba(120, 1, 255, 0.568) 2px solid;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.8);
   }
   .bouton:hover {
     opacity: 0.5;
@@ -324,6 +337,10 @@ a{
 table{
     width: 100%;
     text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px) ;
+    border-radius: 20px;
+    margin-bottom:50px;
 }
 table,td{
     border: 3px   rgba(120, 1, 255, 0.568) solid;
