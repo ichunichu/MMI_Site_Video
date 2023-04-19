@@ -217,10 +217,16 @@ Contact
     justify-content: center;
 }
 #autres-contact{
+
+    width: fit-content;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     gap:5em;
+}
+#autres-contact img{
+    margin:0px;
+
 }
 
   
