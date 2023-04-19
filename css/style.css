@@ -11,6 +11,12 @@ font-family: 'Josefin Sans', sans-serif;
     --secondary : #7A3BDF;
 }
 
+main{
+    padding-inline: 10vw;
+}
+#mainAccueil{
+    padding-inline: 0;
+}
 
 body{
  color:white;
@@ -171,11 +177,12 @@ Accueil
 .desc{
     display: flex;
     flex-direction: row;
-    margin: 15px 0px ;   
+    margin: 15px 0px ;  
+    transition: transform 0.25s ease-in-out; 
 }
 .desc:hover {
  background-color: #7a3bdf65;
- animation-name: text;
+ transform: scale(105%);
  animation-duration: 1s;
 
 }
