@@ -182,14 +182,15 @@ A propos
 
 
 
-img{
-    margin-left: 25%;
-    width: 47%;
-    left: 47%;
-}
+
+
+    #apropos img{
+        margin-left: 0%;
+        width: 100%;
+    }
 #apropos div{
     width: 45%;
-    height: 470px;
+    padding: 1em;
     /*border: 2px solid  rgb(231, 231, 231);*/
     background-color: var(--secondary);
     box-shadow: 10px 4px var(--primary);
@@ -420,6 +421,33 @@ table,td{
     }
 
     /*Page contact*/
+
+
+    /*page a propos*/
+    #apropos {
+        display: flex;
+        justify-content: space-around;
+
+        flex-direction: column;
+    }
+    #apropos div {
+        width: 100%;
+        height: auto;
+        width: auto;
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    #coll {
+        width: 95%;
+        height: 520px;
+        margin-bottom: 15%;
+    }
+    
+    #apropos img{
+        margin-left: 0%;
+        width: 100%;
+    }
     
 
 }
@@ -462,4 +490,33 @@ table,td{
     header > button > svg{
         justify-self: flex-end;
     }
+
+    /*
+    Page a propos*/
+    #apropos {
+        display: flex;
+        justify-content: space-around;
+
+        flex-direction: column;
+    }
+    #apropos div {
+        width: 100%;
+        height: auto;
+        width: auto;
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    #coll {
+        width: 95%;
+        height: 520px;
+        margin-bottom: 15%;
+    }
+    
+    #apropos img{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+
  }
