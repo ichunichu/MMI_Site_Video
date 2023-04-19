@@ -1,0 +1,58 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0px;
+    
+}
+
+header #cj {
+    width:45%
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    background-color: black;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0px;
+    width: 45%;
+
+}
+
+  button{
+    visibility: hidden;
+
+    background-color: unset;
+    border: none;
+}
+
+
+ul li{
+    list-style: none;
+}
+ul a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+ul a:hover{
+    color:black;
+    background-color: white;
+
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  background-color: black;
+}

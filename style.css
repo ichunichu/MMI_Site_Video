@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0px;
+    border: 2px solid blue;
+    
+}
+header #cj {
+    width:40%;
+    border :2px solid blue;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    background-color: black;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    width: 40%;
+    border: 2px solid red;
+
+}
