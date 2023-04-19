@@ -184,8 +184,8 @@ A propos
 
 img{
     margin-left: 25%;
-    width: 400px;
-    left: 400px;
+    width: 47%;
+    left: 47%;
 }
 #apropos div{
     width: 45%;
@@ -405,7 +405,7 @@ table,td{
 
 /*Media Queries*/
 
-@media (max-width: 1300px) { 
+@media (max-width: 600px) { 
     #accueil{
         padding-inline: 10%;
     }
@@ -424,7 +424,7 @@ table,td{
 
 }
 
-@media (max-width: 1000px) { 
+@media (max-width: 420px) { 
     #accueil{
         padding-inline: 1%;
     }
