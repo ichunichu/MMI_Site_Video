@@ -26,7 +26,7 @@
 <p>Le collège Jean Monnet (académie de Toulouse) est un établissement public accueillant 562 élèves, dont 129 élèves en classe de 6ème et 136 en classe de 5ème, 158 élèves de 4ème et 139 élèves en 3ème.</p>
 <p>Il offre la possibilité de suivre la / les sections : SEGPA, ULIS et section sport.</p>
 
-<img src="image/college.jpg" alt="College">
+<img src="img/college.jpg" alt="College">
    </div>
 
 <div id="proj">
@@ -35,7 +35,7 @@
     <p>Nous avons comme projet de créer et de tourner des courts-métrages sur différents thèmes avec le collège Jean Monnet.</p>
     <p>Le nom de cette série est "Jean n'est pas Monnet"</p>
 
-    <img src="image/cinema.png" alt="cinema">
+    <img src="img/cinema.png" alt="cinema">
 
 </div>
 
