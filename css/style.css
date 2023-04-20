@@ -188,6 +188,10 @@ Accueil
     margin: 15px 0px ;  
     transition: transform 0.25s ease-in-out; 
 }
+.desc iframe {
+    width: 200px;
+    aspect-ratio: 1/1;
+}
 .desc:hover {
  background-color: #7a3bdf65;
  transform: scale(105%);
@@ -539,6 +543,19 @@ table{
     }
     footer > form{
         column-span: all;
+    }
+
+
+    /*
+    page video
+    */
+
+    .desc{
+        flex-direction: column;
+    }
+    .desc iframe{
+        width: 100%;
+        aspect-ratio: 16/9;
     }
 
     /*Page contact*/

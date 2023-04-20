@@ -31,7 +31,7 @@
       $shortDesc = $value->getShortDesc();
       echo <<< EOT
       <a href="$BASEURL/videoplayer.php?episode=$numero">
-      <div class="desc"> <iframe id="vid1" width="200" height="200" border-radius="10%"
+      <div class="desc"> <iframe id="vid1" border-radius="10%"
           src="$url"
           title="QUI EST L&#39;IMPOSTEUR ? (ft Pierre Niney &amp; François Civil)" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
