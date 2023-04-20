@@ -18,6 +18,10 @@ main{
     padding-inline: 0;
 }
 
+.hidden{
+    display: none;
+    visibility: hidden;
+}
 body{
  color:white;
  margin:0px;   
@@ -170,6 +174,10 @@ Accueil
 
 /*Liste video*/
 
+.row{
+    display: flex;
+    justify-content: space-between;
+}
 .videos{
     display: flex;
     flex-direction: column;
@@ -185,6 +193,13 @@ Accueil
  transform: scale(105%);
  animation-duration: 1s;
 
+}
+.desc p {
+    text-align: start;
+    margin-left: 0;
+}
+.desc > div{
+    margin-left: 20px;
 }
 
 iframe{
@@ -221,14 +236,26 @@ iframe:hover{
 /*FOOTER*/
 footer{
     background-color: var(--primary);
-    display: flex;
+    display: grid;
+    padding-inline: 10vw;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
     color: aliceblue;
-    grid-template-columns: 1fr 1fr 1fr;
+}
+footer div {
+    flex: 2;
+    display: flex;
+    justify-content: start;
+}
+footer div ul {
+    flex:1
 }
 
-footer > form{
-    align-self: center;    
+footer form{
+    flex:1;
+    width: 100%;
+    align-self: center;
+    
 }
 
 
@@ -296,6 +323,7 @@ Contact
 .contact {
     flex-direction: column;
     max-width: 470px;
+    width: 75%;
     /*margin: 50px auto;*/
     margin: 50px;
     background-color: #fff;
@@ -326,12 +354,12 @@ Contact
   
   #name{
     height: 50px;
-    width: 450px;
+    width: 100%;
   }
 
   #message{
     height: 150px;
-    width: 450px;
+    width: 100%;
   }
 
 
@@ -404,8 +432,6 @@ VIDEO PLAYER*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline: 10vw;
-    
 
 }
 
@@ -485,12 +511,16 @@ table{
 
 /*Media Queries*/
 
-@media (max-width: 600px) { 
+@media (max-width: 1000px) { 
     #accueil{
         padding-inline: 10%;
+        flex-direction: column;
     }
     header{
         padding-inline: 1rem;
+    }
+    header > a {
+        width: 4rem;
     }
     header > button{
         display: none;
@@ -498,9 +528,23 @@ table{
     nav{
         justify-content: end;
     }
+    ul a {
+        width: 5rem;
+        padding:0.5em;
+    }
+    footer{
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer > form{
+        column-span: all;
+    }
 
     /*Page contact*/
 
+    #contactMain{
+        flex-direction: column;
+    }
 
     /*page a propos*/
     #apropos {
@@ -531,7 +575,7 @@ table{
 
 }
 
-@media (max-width: 420px) { 
+@media (max-width: 600px) { 
     #accueil{
         padding-inline: 1%;
     }
@@ -545,11 +589,13 @@ table{
     }
     nav{
         display: none;
+        
     }
     nav.activated{
+        z-index: 99;
         display: block;
         
-        background-color: black;
+        background-color: var(--primary);        
         position:absolute;
         top:8.7rem;
         left: 0;
