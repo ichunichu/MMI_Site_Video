@@ -30,7 +30,7 @@
       $numero= $value->getNumero();
       $shortDesc = $value->getShortDesc();
       echo <<< EOT
-      <a href="/videoplayer.php?episode=$numero">
+      <a href="$BASEURL/videoplayer.php?episode=$numero">
       <div class="desc"> <iframe id="vid1" width="200" height="200" border-radius="10%"
           src="$url"
           title="QUI EST L&#39;IMPOSTEUR ? (ft Pierre Niney &amp; François Civil)" frameborder="0"
